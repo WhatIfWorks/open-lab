@@ -1,0 +1,80 @@
+name: Propose a Tool
+description: Propose a new tool, framework, diagnostic, template, or practitioner resource.
+title: "[Tool Idea]: "
+labels:
+  - tool-idea
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have something useful?
+
+        It doesn't need to be finished, but we'd like to understand the problem you're trying to solve.
+
+        If the idea is still mostly "what if...?", starting a Discussion may be a better first step.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Start with the problem, not the tool.
+      placeholder: "The problem I've been running into is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What are you thinking about building?
+      description: A rough description is fine.
+      placeholder: "I'm thinking about..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Who might find this useful?
+      description: What kinds of practitioners, situations, or environments do you have in mind?
+      placeholder: "This might be useful for..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: experience
+    attributes:
+      label: What led you here?
+      description: |
+        Tell us what you've observed or learned that led to the idea.
+
+        Keep proprietary or confidential details out of it.
+      placeholder: "I've noticed..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Does anything exist yet?
+      description: Notes, spreadsheet, sketch, framework, prototype — anything counts. "Not yet" is fine too.
+      placeholder: "Right now I have..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: help
+    attributes:
+      label: What would help move this forward?
+      description: Feedback, another perspective, testing, technical help, or something else?
+      placeholder: "It would be useful to have..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: sharing
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have the right to share what I've included and have not included confidential, proprietary, controlled, or otherwise restricted information.
+          required: true

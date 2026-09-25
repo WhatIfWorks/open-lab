@@ -1,0 +1,73 @@
+name: Improve Something
+description: Something isn't working, could be clearer, or could be better.
+title: "[Improve]: "
+labels:
+  - improvement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make Open Lab better.
+
+        You don't need to know how to fix something to point it out.
+
+        Tell us what you noticed, what you were trying to do, and what you think could be better.
+
+        If you're looking to explore an idea or compare approaches rather than propose a specific improvement, consider starting a Discussion instead.
+
+  - type: input
+    id: artifact
+    attributes:
+      label: What are you looking at?
+      description: Which Open Lab tool, document, or other resource does this relate to?
+      placeholder: "Example: Handoff Diagnostic"
+    validations:
+      required: true
+
+  - type: textarea
+    id: observation
+    attributes:
+      label: What did you notice?
+      description: What seems wrong, unclear, incomplete, difficult, or worth reconsidering?
+      placeholder: "Tell us what you saw."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What was happening when you noticed it?
+      description: |
+        Context can help us understand whether the issue is general or specific to a particular environment.
+
+        Do not include confidential, proprietary, customer-specific, employee-specific, or otherwise restricted information.
+      placeholder: "What were you trying to accomplish?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you change?
+      description: If you have an idea, we'd like to hear it. It's completely fine if you don't.
+      placeholder: "I'd consider..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: experience
+    attributes:
+      label: Have you tried something different?
+      description: If you've solved a similar problem another way, tell us what happened.
+      placeholder: "Optional — practical experience is especially useful."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: sharing
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have not included confidential, proprietary, controlled, or otherwise restricted information.
+          required: true

@@ -1,0 +1,10 @@
+blank_issues_enabled: true
+
+contact_links:
+  - name: Start a Discussion
+    url: https://github.com/WhatIfWorks/open-lab/discussions
+    about: Ask a question, compare approaches, share experience, or explore an idea.
+
+  - name: How to Contribute
+    url: https://github.com/WhatIfWorks/open-lab/blob/main/docs/HOW-TO-CONTRIBUTE.md
+    about: New to Open Lab or GitHub? Start here.
